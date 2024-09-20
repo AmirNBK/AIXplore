@@ -5,6 +5,7 @@ const WorkSansRegular = localFont({ src: '../assets/fonts/WorkSans-Regular.ttf' 
 const WorkSansMedium = localFont({ src: '../assets/fonts/WorkSans-Medium.ttf' })
 import arrow from '@/assets/icons/tail-right.svg'
 import Image from 'next/image';
+import ai from '@/assets/images/ai.jpg'
 
 
 
@@ -29,6 +30,8 @@ const HeroSection = () => {
                     Learn more
                 </p>
             </div>
+
+            <Image src={ai} alt='Hero section image' className=' w-[850px] h-[550px] object-cover object-bottom rounded-lg shadow-[0_42px_44px_-10px_rgba(1,23,48,0.116)] mb-12' />
         </div>
     );
 };
